@@ -1,0 +1,10 @@
+.feature-card:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  background-color: hsl(180, 66%, 49%);
+  width: 7px;
+  height: 100px;
+  left: 50%;
+  bottom: -100px;
+  transform: translateX(-50%);
+}
