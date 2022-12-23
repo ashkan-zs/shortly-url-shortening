@@ -8,3 +8,15 @@
   bottom: -100px;
   transform: translateX(-50%);
 }
+
+@media screen and (min-width: 768px) {
+  .feature-card:not(:last-child)::after {
+    width: 100px;
+    height: 7px;
+    right: 0;
+    left: unset;
+    top: 50%;
+    bottom: unset;
+    transform: translateX(100%);
+  }
+}
