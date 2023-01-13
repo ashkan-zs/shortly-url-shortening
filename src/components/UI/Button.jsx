@@ -8,7 +8,7 @@ const Button = ({ title, type = "none", className }) => {
   if (type === "normal")
     additionalClasses = "rounded-full py-4 px-12 text-xl text-bold md:px-8 md:py-3 md:text-lg";
 
-  const classes = `bg-primary-cyan text-white ${className} ${additionalClasses}`;
+  const classes = `bg-primary-cyan text-white hover:brightness-110 ${className} ${additionalClasses}`;
   return <button className={classes}>{title}</button>;
 };
 

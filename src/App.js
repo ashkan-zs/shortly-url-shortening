@@ -11,6 +11,7 @@ import { ReactComponent as InstagramIcon } from "./assets/icon-instagram.svg";
 import { ReactComponent as FacebookIcon } from "./assets/icon-facebook.svg";
 import { ReactComponent as PinterestIcon } from "./assets/icon-pinterest.svg";
 import { ReactComponent as TwitterIcon } from "./assets/icon-twitter.svg";
+import ShortLinkForm from "./components/ShortLink/ShortLinkForm";
 
 function App() {
   return (
@@ -57,20 +58,10 @@ function App() {
             <Button type="normal" title="Get Started" className="my-7" />
           </div>
         </div>
-        <form className="flex flex-col w-4/5 bg-primary-dark-violet bg-mobile-form bg-no-repeat bg-right-top p-6 rounded-xl space-y-4 -mb-20 mt-12 md:flex-row md:space-y-0 md:gap-6 md:p-10 md:bg-desktop-form">
-          <input
-            className="rounded-md p-3 flex-1 md:text-sm md:pl-6"
-            type="text"
-            placeholder="Shorten a link here..."
-          />
-          <Button
-            className="rounded-md py-3 font-bold md:py-4 md:px-8 md:text-sm"
-            title="Shorten It!"
-          />
-        </form>
       </section>
 
-      <section className="bg-gray-100 text-center py-10 pt-44">
+      <section className="flex flex-col items-center bg-gray-100 text-center pb-10 mt-20">
+        <ShortLinkForm />
         <article className="container mx-auto flex flex-col items-center">
           <h2 className="text-4xl font-bold text-neutral-very-dark-blue md:text-3xl">
             Advanced Statistics
@@ -131,7 +122,7 @@ function App() {
       </section>
 
       <footer className="bg-neutral-very-dark-violet text-white text-center pt-6">
-        <div className="container mx-auto flex flex-col items-center md:flex-row md:items-start md:text-start">
+        <div className="container mx-auto flex flex-col items-center md:flex-row md:items-start md:text-start md:justify-between">
           <Logo className="m-8 fill-white" />
           <div>
             <h3 className="font-bold py-4">Features</h3>
@@ -186,7 +177,7 @@ function App() {
           </div>
         </div>
 
-        <div class="attribution py-4">
+        <div className="attribution py-4">
           Challenge by Frontend Mentor. Coded by <a href="#">Your Name Here</a>.
         </div>
       </footer>
